@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/sass/styles.css">
+  <script src="script.js" defer></script>
+  <title>Password generator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="copied">copied!</div>
+    <div class="password-header">
+      <h4 class="title">PASSWORD GENERATOR</h4>
+      <!----------GENERATED PASSWORD SCREEN------------>
+      <div class="password"></div>
+    </div>
+    <!-----------PASSWORD PARAMETERS----------->
+    <div class="password-body">
+      <div class="form-control">
+        <label for="length">Password length</label>
+        <input type="number" id="length" value="15" min="4" max="40">
+      </div>
+      <div class="form-control">
+        <label for="uppercase">contain uppercase</label>
+        <input type="checkbox" id="uppercase">
+      </div>
+      <div class="form-control">
+        <label for="lowercase">contain lowercase</label>
+        <input type="checkbox" id="lowercase">
+      </div>
+      <div class="form-control">
+        <label for="number">contain number</label>
+        <input type="checkbox" id="number">
+      </div>
+      <div class="form-control">
+        <label for="symbol">contain symbol</label>
+        <input type="checkbox" id="symbol">
+      </div>
+      <!-----------GENERATE & COPY-------------->
+      <div class="buttons">
+        <button id="generate" class="generate">generate password</button>
+        <button class="copy" id="copy">copy</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

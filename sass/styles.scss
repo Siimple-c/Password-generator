@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+// font size is set to reduce rem sizing to a 1rem=10px
+:root{
+  font-size: 62.5%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
+
+body{
+  font-size:1.6rem;
+  font-family: 'poppins', sans-serif;
+  background-color: #62635d;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  background-color:rgb(231, 210, 141);
+  color: #000;
+  width: 35rem;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  position: relative;
+}
+
+.title{
+  text-align: center;
+  margin-bottom: 1rem;
+  // font-size: 
+}
+
+.password-header{
+padding-left: .3rem;
+margin-bottom: 1.2rem;
+}
+
+.password{
+background:  #bd9e3880;
+width: 100%;
+// height:7rem;
+overflow: auto;
+display: flex;
+font-size: 2rem;
+align-items: center;
+padding: 1rem;
+}
+
+button{
+  cursor: pointer;
+  &:hover{
+    color: red;
+  }
+}
+
+.form-control{
+  margin-bottom: .5rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+input{
+  position: absolute;
+  right: 31%;
+  cursor: pointer;
+}
+
+#length{
+  width: 4rem;
+  padding-left: .2rem;
+}
+
+.password-body{
+  position: relative;
+}
+
+.buttons{
+  display: flex;
+  gap: 1rem;
+}
+
+.generate{
+  width: 70%;
+  padding: 1.5rem;
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  border-radius: .2rem;
+  color:rgb(48, 44, 82);
+}
+
+.copy{
+  width: 25%;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color:rgb(48, 44, 82);
+  border-radius: .2rem;
+}
+
+.copied{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  right: 5%;
+  font-size: 2rem;
+  font-weight: 700;
+  opacity: 0;
+  &.active{
+    opacity:1;
+  }
+}
